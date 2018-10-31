@@ -13,24 +13,22 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="bg-dark">
+<body class="body-background pb-5">
   <header class="d-flex justify-content-between p-3 fluid-container">
     <div></div>
     <h1 class="text-white text-center text-uppercase font-weight-bold">Welcome to chat App</h1>
-    <button id="logout" class="main-shadow btn btn-dark p-0 px-2 m-2">Logout</button>
+    <button id="logout" class="main-shadow btn btn-outline-light p-0 px-2 m-2">Logout</button>
   </header>
   <div class="container-fluid mt-4 px-5">
     <div class="row">
-      <div class="col-3">
-          <div id="room-info" class="card main-shadow bg-info my-3 text-white">
-              <button class=" btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#collapseExample">
-                <span class="lead">
+      <div class="col-12 col-md-4 col-lg-3">
+          <div id="room-info" class="card main-shadow transparent-background border-info my-3 text-white">
+              <button class=" btn btn-block btn-info button-info" type="button" data-toggle="collapse" data-target="#collapseExample">
                   Room infomation
-                </span>
               </button>
         
               <div class="collapse" id="collapseExample">
-                <div class="card-body bg-dark">
+                <div class="card-body">
                   <p id="room-name" class="text-light text-uppercase">
                     Room name:
                   </p>
@@ -58,7 +56,7 @@
           <div class="row">
             <div class="col-12 col-md-9">
               <div class="input-group mb-3 main-shadow">
-                <input type="text" name="message" class="form-control bg-dark border-info text-white w-50" placeholder="message"
+                <input type="text" name="message" class="form-control message-input border-info text-white w-50" placeholder="message"
                   required autocomplete="off">
                 <div class="input-group-append">
                   <button type="submit" class="btn btn-info px-3"><i class="fa fa-paper-plane"></i>
@@ -67,7 +65,7 @@
               </div>
             </div>
             <div class="col-12 mb-3 mb-md-0 col-md-3">
-              <button id="send-location" type="button" class=" main-shadow btn btn-block btn-danger" data-toggle="tooltip"
+              <button id="send-location" type="button" class=" main-shadow btn btn-block btn-outline-info text-white" data-toggle="tooltip"
                 data-placement="bottom" title="BE CAREFUL!!! you could be found by bad users.">
                 Send my location
               </button>

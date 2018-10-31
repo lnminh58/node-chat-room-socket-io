@@ -4,6 +4,10 @@ header,
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.body-background {
+  background: linear-gradient(135deg, rgb(17, 195, 201), rgb(17, 134, 201), rgb(127, 17, 201));
+  /* height: 100vh; */
+}
 .main-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -24,13 +28,14 @@ header,
 .bg-form {
   background: rgba(255, 255, 255, 0.1);
 }
-.transparent-background {
-  background: rgba(4, 22, 34, 0.3);
+.transparent-background, .message-input, .message-input:focus{
+  background: rgba(43, 43, 43, 0.3);
 }
 
-.body-background {
-  height: 100vh;
-  background-size: cover;
-  background-image: url('./../image/bg.jpg');  
+.message-input::placeholder{
+  color: rgb(211, 211, 211)
 }
 
+.button-info{
+  border-radius: 0px
+}
