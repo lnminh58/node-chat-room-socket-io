@@ -1,0 +1,36 @@
+header,
+.main-background {
+  background: linear-gradient(125deg, rgb(66, 181, 185), rgb(206, 102, 216));
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main-text-shadow {
+  text-shadow: 3px 3px rgba(214, 214, 214, 0.3);
+}
+.title-text-shadow {
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  border-radius: 0 20px 20px 20px;
+}
+.my-content {
+  border-radius: 20px 0px 20px 20px;
+}
+
+.bg-form {
+  background: rgba(255, 255, 255, 0.1);
+}
+.transparent-background {
+  background: rgba(4, 22, 34, 0.3);
+}
+
+.body-background {
+  height: 100vh;
+  background-size: cover;
+  background-image: url('./../image/bg.jpg');  
+}
+

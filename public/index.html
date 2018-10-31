@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Join Chat Room</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="main-background">
+  <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;
+  width: 100%">
+
+    <div class="rounded bg-form main-shadow">
+      <p class="h2 text-center text-white py-3 main-text-shadow" >Join a Chat</p>
+      <form id="login-form" class="px-5 pb-5" style="width: 400px">
+        <p class="lead text-white mb-0">Display name</p>
+        <input type="text" name='name' autocomplete="off" required class="form-control">
+        <p class="lead mt-3 text-white  mb-0" >Room name</p>
+        <input type="text" name='room' autocomplete="off" required class="form-control">
+        <p class="lead mt-3 text-white  mb-0">Room Password</p>
+        <input type="password" name='password' required class="form-control">
+        <input type="submit" value="JOIN" class="btn btn-block btn-outline-light mt-3">
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="./js/moment.js"></script>
+  <script src="./js/mustache.js"></script>
+  <script src="./js/deparam.js"></script>
+  <script>
+  $('#login-form').on('submit', function(e) {
+  e.preventDefault();
+  const user = { 
+    name: $('[name=name]').val(),
+    room: $('[name=room]').val(),
+    password: $('[name=password]').val() 
+  };
+
+  localStorage.setItem('user',JSON.stringify(user));
+  window.location.href='/chat.html';
+});
+  
+  </script>
+
+
+</body >
+</html >
